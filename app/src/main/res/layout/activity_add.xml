@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.vic.villz.journalapp.Activities.AddJournalActivity">
+
+<include
+    layout="@layout/toolbar"/>
+
+
+
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_below="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="24dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/add_thought_test"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textSize="22sp"
+        android:text="@string/add_your_thought"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/add_title"
+        android:background="@drawable/edit_text_background"
+        android:layout_width="match_parent"
+        android:hint="Title"
+        android:textColorHint="@color/colorGrey"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_marginTop="25dp"
+        android:id="@+id/add_content"
+        android:background="@drawable/edit_text_background"
+        android:layout_width="match_parent"
+        android:gravity="top"
+        android:hint="Whats on your mind"
+        android:textColorHint="@color/colorGrey"
+        android:padding="10dp"
+        android:layout_height="250dp" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/upload_btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:text="@string/add"
+        android:textStyle="bold"
+        android:background="@drawable/submit_btn_background"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

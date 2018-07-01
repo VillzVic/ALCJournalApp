@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_click"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:layout_marginTop="9dp"
+    android:background="@drawable/list_item_background"
+    android:layout_marginHorizontal="16dp"
+    android:layout_height="wrap_content">
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:paddingVertical="16dp"
+    android:paddingHorizontal="16dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/text_drawable"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_calendar"/>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/journal_title"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="@string/title"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/joural_time"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/date"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/edit_item"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_blue"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/delete_item"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.v7.widget.LinearLayoutCompat>
+</RelativeLayout>
